@@ -1,57 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>用户设置页面背景颜色 This is only a test</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        input[type="text"], input[type="color"] {
-            padding: 10px;
-            margin: 10px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+  <title>查ID功能</title>
 </head>
 <body>
-    <h1>设置页面背景颜色</h1>
-    <p>输入颜色值（如 "red" 或 "#FF0000"）或选择颜色：</p>
-
-    <!-- 输入颜色值 -->
-    <input type="text" id="colorInput" placeholder="输入颜色值">
-    <button onclick="setBackgroundColor()">应用颜色</button>
-
-    <br><br>
-
-    <!-- 选择颜色 -->
-    <input type="color" id="colorPicker">
-    <button onclick="setBackgroundColorFromPicker()">选择颜色</button>
-
-    <script>
-        // 通过输入框设置背景颜色
-        function setBackgroundColor() {
-            const color = document.getElementById('colorInput').value;
-            if (color) {
-                document.body.style.backgroundColor = color;
-            } else {
-                alert("请输入有效的颜色值！");
-            }
-        }
-
-        // 通过颜色选择器设置背景颜色
-        function setBackgroundColorFromPicker() {
-            const color = document.getElementById('colorPicker').value;
-            document.body.style.backgroundColor = color;
-        }
-    </script>
+  <div id="result"></div>
+  <script src="main.js"></script>
 </body>
 </html>
